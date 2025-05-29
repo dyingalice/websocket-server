@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: main-server
+
+  activemq:
+    broker-url: tcp://172.16.0.8:61616
+    inMemory: true
+    pool:
+      enabled: false
+
+  data:
+    redis:
+      host: 172.16.0.4
+      password: luo122333
+      port: 6379
+      timeout: 10000
+
+alice:
+  wss:
+    redis-primary-prefix: "wss-primary"

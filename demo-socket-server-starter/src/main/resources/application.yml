@@ -1,0 +1,22 @@
+spring:
+  application:
+    uuid: server-00001
+    name: socket-server
+
+  activemq:
+    broker-url: tcp://172.16.0.8:61616
+    inMemory: true
+    pool:
+      enabled: false
+
+  data:
+    redis:
+      host: 172.16.0.4
+      password: luo122333
+      port: 6379
+      timeout: 10000
+
+alice:
+  wss:
+    client-prefix: "wss-client"
+    redis-primary-prefix: "wss-primary"
